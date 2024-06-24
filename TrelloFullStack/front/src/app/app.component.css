@@ -1,0 +1,17 @@
+body, .container, .card, .task, .new-task, .btn {
+    filter: grayscale(100%);
+  }
+  
+  /* Mantener en color los botones */
+  .btn {
+    filter: grayscale(0%);
+  }
+  
+  /* Añadir transición suave para evitar cambios bruscos */
+  body, .container, .card, .task, .new-task, .btn {
+    transition: filter 0.3s ease;
+  }
+
+  body {
+    background-color: #cb4a4a; /* Cambia este color a tu preferencia */
+  }

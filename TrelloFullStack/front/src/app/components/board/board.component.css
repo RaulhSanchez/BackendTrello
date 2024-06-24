@@ -1,0 +1,50 @@
+/* src/app/components/board/board.component.css */
+
+/* Estilo para el fondo de la página */
+body {
+    background-color: #f8f9fa; /* Cambia el color de fondo de la página */
+  }
+  
+  /* Estilo para las tarjetas */
+  .card {
+    background-color: #ffffff; /* Fondo de las tarjetas */
+    border: 1px solid #ced4da; /* Borde de las tarjetas */
+  }
+  
+  /* Estilo para el encabezado de las tarjetas */
+  .card-header {
+    background-color: #2a4968; /* Fondo del encabezado de las tarjetas */
+    color: #ffffff; /* Color del texto del encabezado de las tarjetas */
+  }
+  
+  /* Estilo para los botones */
+  .btn-primary {
+    background-color: #7f848a; /* Fondo del botón primario */
+    border-color: #93a6bb; /* Color del borde del botón primario */
+  }
+  
+  .btn-primary:hover {
+    background-color: #c4d0dd; /* Fondo del botón primario al pasar el ratón */
+    border-color: #b8cce2; /* Color del borde del botón primario al pasar el ratón */
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Fondo del botón de éxito */
+    border-color: #28a745; /* Color del borde del botón de éxito */
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Fondo del botón de éxito al pasar el ratón */
+    border-color: #218838; /* Color del borde del botón de éxito al pasar el ratón */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Fondo del botón de peligro */
+    border-color: #dc3545; /* Color del borde del botón de peligro */
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333; /* Fondo del botón de peligro al pasar el ratón */
+    border-color: #c82333; /* Color del borde del botón de peligro al pasar el ratón */
+  }
+  
