@@ -12,9 +12,9 @@
                 <h5 class="mb-1">{{ task.title }}</h5>
                 <p class="mb-1">{{ task.description }}</p>
                 <p class="mb-1">Status: {{ task.status }}</p>
-                <button class="btn btn-primary btn-sm mr-2" (click)="updateTaskStatus(task._id, 'in-progress')">In Progress</button>
-                <button class="btn btn-success btn-sm mr-2" (click)="updateTaskStatus(task._id, 'done')">Done</button>
-                <button class="btn btn-danger btn-sm" (click)="deleteTask(task._id)">Delete</button>
+                <button class="btn btn-primary btn-status" (click)="updateTaskStatus(task._id, 'in-progress')">In Progress</button>
+                <button class="btn btn-success btn-status" (click)="updateTaskStatus(task._id, 'done')">Done</button>
+                <button class="btn btn-danger btn-status" (click)="deleteTask(task._id)">Delete</button>
               </div>
             </div>
           </div>
