@@ -1,0 +1,42 @@
+<!-- src/app/components/board/board.component.html -->
+<div class="container mt-4">
+    <div class="row">
+      <div class="col" *ngFor="let status of ['to-do', 'in-progress', 'done']">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h2 class="card-title">{{ status | titlecase }}</h2>
+          </div>
+          <div class="card-body">
+            <div class="list-group">
+              <div class="list-group-item task" *ngFor="let task of tasks | filterByStatus: status">
+                <h5 class="mb-1">{{ task.title }}</h5>
+                <p class="mb-1">{{ task.description }}</p>
+                <p class="mb-1">Status: {{ task.status }}</p>
+                <button class="btn btn-primary btn-sm mr-2" (click)="updateTaskStatus(task._id, 'in-progress')">In Progress</button>
+                <button class="btn btn-success btn-sm mr-2" (click)="updateTaskStatus(task._id, 'done')">Done</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteTask(task._id)">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h2 class="card-title">New Task</h2>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input type="text" class="form-control mb-2" placeholder="Title" [(ngModel)]="newTask.title">
+              <textarea class="form-control mb-2" rows="3" placeholder="Description" [(ngModel)]="newTask.description"></textarea>
+              <button class="btn btn-primary btn-block" (click)="createTask()">Create Task</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
